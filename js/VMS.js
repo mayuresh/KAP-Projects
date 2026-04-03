@@ -1,10 +1,10 @@
 var _commonMissing=(typeof _COMMON_LOADED==='undefined');
 if(_commonMissing){
-  console.error('myApps_Common.js not loaded');
+  console.error('Common.js not loaded');
   document.addEventListener('DOMContentLoaded',function(){
     var lp=document.getElementById('loginPage');if(lp)lp.style.display='flex';
     var err=document.getElementById('loginError');
-    if(err){err.textContent='⚠ App file missing: myApps_Common.js must be in the same folder as this page.';err.style.display='block';}
+    if(err){err.textContent='⚠ App file missing: Common.js must be in the same folder as this page.';err.style.display='block';}
   });
 }
 
@@ -493,7 +493,7 @@ function renderMyApps(){
   if(!grid) return;
   var userApps=CU.apps||[];
   var isAdmin=(CU.roles||[]).some(function(r){return r==='Super Admin'||r==='Admin';});
-  var APP_FILES_MAP={vms:null,hwms:'myApps_HWMS.html',security:'myApps_Security.html',maintenance:null,review:null,hrms:null};
+  var APP_FILES_MAP={vms:null,hwms:'HWMS.html',security:'Security.html',maintenance:null,review:null,hrms:null};
   var APP_ACTIVE_MAP={vms:true,hwms:true,security:true,maintenance:false,review:false,hrms:false};
   grid.innerHTML=PORTAL_APPS.map(function(app){
     var file=APP_FILES_MAP[app.id]||null;
@@ -1437,11 +1437,11 @@ function _runInitApp(){
   const _mc=document.querySelector('.main-content');
   if(_currentApp==='security'){
     // Security Surveillance is a separate app — redirect
-    _navigateTo('myApps_Security.html');
+    _navigateTo('Security.html');
     return;
   } else if(_currentApp==='hwms'){
     // HWMS is now a separate module — redirect
-    _navigateTo('myApps_HWMS.html');
+    _navigateTo('HWMS.html');
     return;
   } else if(isAdminOrSA){
     showPage('pageDashboard','Dashboard');

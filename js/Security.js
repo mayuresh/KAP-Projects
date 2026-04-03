@@ -1,6 +1,6 @@
 if(typeof _COMMON_LOADED==='undefined'){
   document.body.style.display='';
-  document.body.innerHTML='<div style="padding:40px;text-align:center;font-family:sans-serif"><h2 style="color:#dc2626">⚠ Failed to load myApps_Common.js</h2></div>';
+  document.body.innerHTML='<div style="padding:40px;text-align:center;font-family:sans-serif"><h2 style="color:#dc2626">⚠ Failed to load Common.js</h2></div>';
   throw new Error('Common.js not loaded');
 }
 

@@ -1,7 +1,7 @@
 if(typeof _COMMON_LOADED==='undefined'){
   document.addEventListener('DOMContentLoaded',function(){
     var lp=document.getElementById('loginPage');if(lp)lp.style.display='flex';
-    var ov=document.getElementById('loginConnLabel');if(ov){ov.textContent='⚠ myApps_Common.js not found';ov.style.color='#dc2626';}
+    var ov=document.getElementById('loginConnLabel');if(ov){ov.textContent='⚠ Common.js not found';ov.style.color='#dc2626';}
   });
 }
 
@@ -310,7 +310,7 @@ function doLogin(){
 }
 
 const _LOGO="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHJ4PSIxMiIgZmlsbD0iIzJhOWFhMCIvPjx0ZXh0IHg9IjMyIiB5PSI0MyIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSI5MDAiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iLTAuNSI+S0FQPC90ZXh0Pjwvc3ZnPg==";
-const APP_FILES={vms:'myApps_VMS.html',hwms:'myApps_HWMS.html',security:'myApps_Security.html',maintenance:null,review:null,hrms:null};
+const APP_FILES={vms:'VMS.html',hwms:'HWMS.html',security:'Security.html',maintenance:null,review:null,hrms:null};
 const APP_ACTIVE={vms:true,hwms:true,security:true,maintenance:false,review:false,hrms:false};
 
 // ── Portal ──────────────────────────────────────────────────────────────────
