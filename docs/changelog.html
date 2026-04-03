@@ -22,6 +22,8 @@
 
   <h2>2026</h2>
   <ul>
+    <li><strong>[2026-04-03]</strong> — Phase 2 refactor (#1): extracted ~555 lines of shared CSS from VMS and Security into <code>css/myApps_Shared.css</code>. Each app now loads the shared file via <code>&lt;link&gt;</code> and keeps only its own <code>:root</code> variables and unique classes. Also fixed a latent bug: Security's <code>.sec-nav-item</code> referenced <code>--accent-light</code> which was never defined; variable now added to Security's <code>:root</code>.</li>
+    <li><strong>[2026-04-03]</strong> — Phase 1 refactor: extracted all inline JS from index.html, myApps_VMS.html, myApps_HWMS.html, and myApps_Security.html into separate .js files under <code>js/</code>. Also moved myApps_Common.js into <code>js/</code>.</li>
     <li><strong>[2026-04-03]</strong> — Added CLAUDE.md (universal engineering guidelines), filled in PROJECT.md with project-specific context, added .gitignore, and created /docs folder with initial documentation (this file and requirements, architecture, runbook).</li>
   </ul>
 
